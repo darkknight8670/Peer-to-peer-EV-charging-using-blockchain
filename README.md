@@ -108,7 +108,8 @@ pages/
 │   └── ...
 ├── history.jsx                   → /history
 ├── profile.jsx                   → /profile
-└── error.jsx                     → /error
+├── error.jsx                     → /error
+├── contact.jsx                   → /contact
+├── about.jsx                     → /about
+└── history.jsx                   → /history (duplicated above?)
 ```
-
-
