@@ -75,6 +75,7 @@ PORT=4000
 
   ## run backend in new terminal
   ```
+  cd Peer-to-peer-EV-charging-using-blockchain
   npm run backend
   ```
 
