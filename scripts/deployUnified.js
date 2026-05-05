@@ -7,8 +7,9 @@ async function main() {
   console.log("Deployer:", deployer.address);
 
   // --- Deploy User Registry ---
-  const Userregistry = await hre.ethers.getContractFactory("Userregistry");
-  const user = await Userregistry.deploy();
+   const Userregistry = await hre.ethers.getContractFactory("Userregistry");
+  const adminAddress = process.env.NEXT_PUBLIC_ADMIN_ADDRESS || "0xA2B131c9ea1422765eEF1C0dEDC6Be5B394b9279";
+  const user = await Userregistry.deploy(adminAddress);
   await user.waitForDeployment();
   const userAddr = await user.getAddress();
   console.log("Userregistry:", userAddr);

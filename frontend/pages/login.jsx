@@ -5,7 +5,7 @@ import { connectWallet } from "../lib/web3";
 import { loginProfile } from "../lib/api";
 import { saveSession } from "../lib/session";
 
-const ADMIN_WALLET = "0x389f141512610d5Db0A55cA8924405Dc842AE0F1".toLowerCase();
+const ADMIN_WALLET = process.env.NEXT_PUBLIC_ADMIN_ADDRESS?.toLowerCase() || "0x0000000000000000000000000000000000000000" ;
 
 export default function LoginPage() {
   const router = useRouter();
@@ -80,7 +80,7 @@ export default function LoginPage() {
             <input value={form.evModel} onChange={onChange("evModel")} required />
           </label>
           <label>
-            Battery capacity (kWh)
+            Battery capacity (Wh)
             <input type="number" min="1" value={form.batteryCapacity} onChange={onChange("batteryCapacity")} required />
           </label>
         </div>

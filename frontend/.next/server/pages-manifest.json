@@ -2,10 +2,15 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/receiver/complete": "pages/receiver/complete.js",
+  "/receiver/dashboard": "pages/receiver/dashboard.js",
+  "/admin": "pages/admin.js",
   "/profile": "pages/profile.js",
-  "/": "pages/index.js",
-  "/history": "pages/history.js",
+  "/receiver/broadcast": "pages/receiver/broadcast.js",
+  "/donor/feed": "pages/donor/feed.js",
   "/dashboard": "pages/dashboard.js",
-  "/login": "pages/login.js"
+  "/receiver/session/[id]": "pages/receiver/session/[id].js",
+  "/donor/session/[id]": "pages/donor/session/[id].js",
+  "/donor/confirm/[id]": "pages/donor/confirm/[id].js",
+  "/receiver/waiting": "pages/receiver/waiting.js",
+  "/donor/dashboard": "pages/donor/dashboard.js"
 }
