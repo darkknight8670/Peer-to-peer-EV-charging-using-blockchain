@@ -47,12 +47,12 @@ PORT=4000
 
 To run the complete system locally, you can start a local Hardhat node and deploy the contracts:
 
-1. Open a new terminal and start the Hardhat network:
+1. start the Hardhat network:
 ```bash
 npx hardhat compile
 ```
 
-2. Open another terminal in the root directory and deploy the contracts to your local network:
+2. deploy the contracts to your local network:
 ```bash
 npm run deploy
 ```
